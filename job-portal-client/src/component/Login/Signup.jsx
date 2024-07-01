@@ -20,23 +20,24 @@ const Signup = () => {
   }
 
   return (
-    <div className='flex Login mt-28'>
-        <div className='item'>
-        <h1>Create an Account</h1>
+      
+        <div className=' main'>
+        <p className='sign text-center text-3xl'>Create an Account</p>
       <form className='form1' onSubmit={(e)=>handleSubmit(e)}>
-        <label></label>
-        <input type='text' className='input1' placeholder='Email' name='email'/>
-        <input type='text' className='input1' placeholder='Password' name='password'/>
-        <button className='button1'>Sign Up</button>    
+        
+        <input type='text' className='un text-center mt-7' placeholder='Email' name='email'/>
+        <input type='text' className='pass' placeholder='Password' name='password'/>
+        <button className='button1 text-center'>Sign Up</button>    
       </form>
-      <p>
+      <p className='text-center mt-4'>
                         Already have an account?{' '}
-                        <NavLink to="/login" >
+                        <NavLink to="/login" className='l' >
                             Log in
                         </NavLink>
                     </p>   
        </div>  
-    </div>
+      
+    
   )
 }
 

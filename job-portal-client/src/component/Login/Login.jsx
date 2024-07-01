@@ -25,23 +25,24 @@ const Login = () => {
   };
   
   return (
-  <div className='Login flex mt-32' >
-    <div className='item'>
-      <h1>Welecome Back</h1>
+  
+    <div className='main'>
+      <h1 className='sign text-center text-3xl'>Welecome Back</h1>
       <form className='form1' onSubmit={(e)=>handleSubmit(e)}>
-        <input className='input1'  type='text' placeholder='Email' name='email'/>
-        <input className='input1'  type='text' placeholder='Password' name='password'/>
-        <button  className='button1'>Log In</button>
+        
+        <input className='un text-center mt-7'  type='text' placeholder='Email' name='email'/>
+        <input className='pass'  type='text' placeholder='Password' name='password'/>
+        <button  className='button1 text-center'>Log In</button>
         </form>
         
-        <p className="text-sm text-white text-center">
+        <p className="text-center mt-4 text-cyan-800">
                             No account yet? {' '}
-                            <NavLink to="/signup">
+                            <NavLink to="/signup" className='l'>
                                 Sign up
                             </NavLink>
                         </p>
         </div>   
-  </div>
+  
   );
 };
 export default Login
